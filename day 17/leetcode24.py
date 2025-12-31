@@ -35,6 +35,7 @@ O(1), as no extra space is used apart from a few variables.
 class solution:
     def isAlphanumeric(self,s):
         x=ord(s)
+        # a ,97 to z ,122 or A,65 to Z ,90 or 1 ,48  to 9, 57
         if 97<=x<=122 or 67<=x<=90 or 48<=x<=57:
             return True
         return False
@@ -56,3 +57,4 @@ class solution:
             return True
 sol = solution()
 print(sol.ispalindrom("A man, a plan, a canal: Panama"))
+
