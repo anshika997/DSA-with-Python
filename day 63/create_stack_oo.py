@@ -18,6 +18,10 @@ class stack:
 Stack=stack()
 Stack.push(1)
 Stack.push(2)
+Stack.push(3)
+Stack.push(5)
+
+print(Stack)
 print(Stack.top())
 print(Stack.size())
 print(Stack.pop())
