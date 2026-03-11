@@ -10,8 +10,6 @@ class Solution:
             return "0"
 
         return "".join(num_strings)
-
-
 # Example values added for VS Code
 nums = [3, 30, 34, 5, 9]
 
