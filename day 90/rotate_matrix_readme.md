@@ -15,7 +15,7 @@ We solve in 2 steps:
 
 ---
 
-## Code
+## Code 
 
 ```python
 class Solution:
