@@ -1,3 +1,5 @@
+# own solution
+
 class Solution:
     def reverseBits(self, n: int) -> int:
         binary = bin(n)[2:]
