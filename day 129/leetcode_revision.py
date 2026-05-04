@@ -1,5 +1,5 @@
 class Solution:
-    def removeElement(self, nums,val):
+    def removeElement(self, nums, val):
         i = 0
         n = len(nums)
 
@@ -12,5 +12,5 @@ class Solution:
 
         return n
 Solution = Solution()
-print(Solution.removeElement([3, 2, 2, 3], 3    ))
-print(Solution.removeElement([0, 1, 2, 2, 3, 0, 4, 2], 2))  
+print(Solution.removeElement([3, 2, 2, 3], 3 ))
+print(Solution.removeElement([0, 1, 2, 2, 3, 0, 4, 2] , 2)) 
