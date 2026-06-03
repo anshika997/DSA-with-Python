@@ -23,7 +23,8 @@ class Solution:
                     r = mid-1
         return False 
 print(Solution().search([2,5,6,0,0,1,2], 0))
-print(Solution().search([2,5,6,0,0,1,2], 3))           
+print(Solution().search([2,5,6,0,0,1,2], 3))
+           
             
             
         
