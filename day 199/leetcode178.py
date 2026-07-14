@@ -1,0 +1,9 @@
+class Solution:
+    def nextGreatestLetter(self, letters , target): 
+        for letter in letters :
+            if letter > target :
+                return letter 
+        return letters[0]
+Solution = Solution()
+print(Solution.nextGreatestLetter(["c","f","j"],"d"))
+print(Solution.nextGreatestLetter(["c","f","j"],"g"))
