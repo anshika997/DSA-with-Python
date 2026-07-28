@@ -1,0 +1,29 @@
+class Solution:
+    def isLongPressedName(self, name, typed):
+        i = 0
+        j = 0
+
+        while i < len(name) and j < len(typed):
+
+            if name[i] == typed[j]:
+                i += 1
+                j += 1
+
+            elif j > 0 and typed[j] == typed[j-1]:
+                j += 1
+
+            else:
+                return False
+
+        while j < len(typed):
+
+            if typed[j] == typed[j-1]:
+                j += 1
+            else:
+                return False
+
+        return i == len(name)
+Solution = Solution()
+print(Solution.isLongPressedName("alex", "aaleex"))
+print(Solution.isLongPressedName("saeed", "ssaaedd")) 
+print(Solution.isLongPressedName("leelee", "lleeelee"))
