@@ -1,0 +1,45 @@
+class TreeNode:
+    def __init__(self, val=0, left=None, right=None):
+        self.val = val
+        self.left = left
+        self.right = right
+
+
+class Solution:
+    def isUnivalTree(self, root):
+        value = root.val
+
+        def check(node):
+            if node is None:
+                return True
+
+            if node.val != value:
+                return False
+
+            return check(node.left) and check(node.right)
+
+        return check(root)
+
+
+# -------------------------
+# Create Binary Tree
+# -------------------------
+
+root = TreeNode(1)
+
+root.left = TreeNode(1)
+root.right = TreeNode(1)
+
+root.left.left = TreeNode(1)
+root.left.right = TreeNode(2)
+
+
+# -------------------------
+# Run Solution
+# -------------------------
+
+solution = Solution()
+
+result = solution.isUnivalTree(root)
+
+print("Is the tree univalued?", result)
