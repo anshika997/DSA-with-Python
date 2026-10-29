@@ -59,6 +59,5 @@ list2 = create_list([1, 3, 4])
 
 solution = Solution()
 merged = solution.mergeTwoLists(list1, list2)
-
 print("Merged Linked List:")
 print_list(merged)
