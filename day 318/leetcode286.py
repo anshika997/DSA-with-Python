@@ -1,0 +1,21 @@
+
+operations = ["5", "2", "C", "D", "+"]
+
+stack = []
+
+for op in operations:
+
+    if op == "C":
+        stack.pop()
+
+    elif op == "D":
+        stack.append(stack[-1] * 2)
+
+    elif op == "+":
+        stack.append(stack[-1] + stack[-2])
+
+    else:
+        stack.append(int(op))
+
+print("Final Stack:", stack)
+print("Total Score:", sum(stack))
